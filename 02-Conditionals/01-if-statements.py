@@ -9,6 +9,7 @@ print("Part 1:")
 def print_if_negative(x):
   print()
 
+print("print_if_negative:")
 print_if_negative(5)  # Does nothing
 print_if_negative(-7) # negative
 print()
@@ -17,6 +18,7 @@ print()
 def min(x, y):
   return 0
   
+print("min:")
 print(min(3, 6)) # 3
 print(min(5, 4)) # 4
 print(min(1, 1)) # 1
@@ -26,6 +28,7 @@ print()
 def my_abs(x):
   return 0
   
+print("my_abs:")
 print(my_abs(-3)) # 3
 print(my_abs(6))  # 6
 print()
@@ -42,6 +45,7 @@ print("Part 2:")
 def are_zero(x, y):
   return ""
   
+print("are_zero:")
 print(are_zero(0, 0)) # both zero
 print(are_zero(1, 0)) # non-zero
 print(are_zero(0, 5)) # non-zero
@@ -53,6 +57,7 @@ print()
 def ordered(x, y, z):
   return 0
   
+print("ordered:")
 print(ordered(1, 2, 3)) # 1
 print(ordered(2, 1, 2)) # 0
 print(ordered(2, 2, 1)) # 0
@@ -64,6 +69,7 @@ print()
 def long_ordered(a, b, c, d, e):
   return 0
   
+print("long_ordered:")
 print(long_ordered(1, 2, 3, 3, 4)) # 1
 print(long_ordered(3, 2, 3, 3, 4)) # 0
 print(long_ordered(1, 2, 4, 4, 3)) # 0
@@ -81,6 +87,7 @@ print()
 # Otherwise returns 0
 # Tip: you can use the int() function to round down to the nearest integer
 
+# print("perfect_square:")
 # print(perfect_square(5)) # 0
 # print(perfect_square(9)) # 1
 # print(perfect_square(0)) # 1
@@ -91,6 +98,7 @@ print()
 # Otherwise returns 0
 # Note that y may be less than z or vice-versa
 
+# print("bounded:")
 # print(bounded(1, 1, 1)) # 1
 # print(bounded(5, 6, 4)) # 1
 # print(bounded(3, 2, 2)) # 0
@@ -102,6 +110,7 @@ print()
 # Returns true if x, y, and z are all bounded by l and u
 # Can you use a previous function to help?
 
+# print("multi_bounded:")
 # print(multi_bounded(1, 2, 3, 0, 5)) # 1
 # print(multi_bounded(3, 3, 1, 2, 4)) # 0
 # print(multi_bounded(1, 4, 2, 1, 3)) # 0

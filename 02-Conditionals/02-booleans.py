@@ -11,6 +11,7 @@ print("Part 1:")
 def big_or(x, y, z):
   return True
   
+print("big_or:")
 print(big_or(True, True, False))    # True
 print(big_or(False, False, False))  # False
 print(big_or(False, False, True))   # True
@@ -20,7 +21,8 @@ print()
 # (XOR stands for _exclusive or_)
 def xor(x, y):
   return True
-  
+
+print("xor:")  
 print(xor(True, True))    # False
 print(xor(True, False))   # True
 print(xor(False, True))   # True
@@ -30,6 +32,7 @@ print(xor(False, False))  # False
 def is_multiple(x, y):
   return True
   
+print("is_multiple:")
 print(is_multiple(5, 2))  # False
 print(is_multiple(8, 3))  # False
 print(is_multiple(8, 2))  # True
@@ -40,6 +43,7 @@ print()
 def ends_with_eight_or_nine(x):
   return True
   
+print("ends_with_eight_or_nine:")
 print(ends_with_eight_or_nine(119))  # True
 print(ends_with_eight_or_nine(132))  # False
 print(ends_with_eight_or_nine(5738)) # True
@@ -56,6 +60,7 @@ print("Part 2:")
 def funny_mult(x, y):
   return 0
   
+print("funny_mult:")
 print(funny_mult(-1, -3)) # -4
 print(funny_mult(3, 4))   # 12
 print(funny_mult(-2, 5))  # -10
@@ -66,6 +71,7 @@ print()
 def add_hello(s):
   return ""
   
+print("add_hello:")
 print(add_hello("Bob"))         # Hello Bob
 print(add_hello("Carol"))       # Hello Carol
 print(add_hello("Hello Alex"))  # Hello Alex
@@ -80,6 +86,7 @@ print()
 # Returns True if exactly one of the three inputs is True, and False otherwise
 # You might find this a bit easier if you use a previous function you wrote!
 
+#print("exactly_one:")
 #print(exactly_one(True, True, False))   # False
 #print(exactly_one(False, True, False))  # True
 #print(exactly_one(True, True, True))    # False
@@ -90,6 +97,7 @@ print()
 # Don't use the built-in function `round` which does exactly this (but you can use it to test!)
 # As a tip, int rounds _down_, which is helpful for implementing this function
 
+#print("my_round:")
 #print(my_round(1.3))   # 1
 #print(my_round(2.73))  # 3
 #print(my_round(7.5))   # 8
