@@ -12,7 +12,7 @@ The reason strings are important is that Python can do operations on them!  Thin
 
 Strings can be "concatenated" together, where you essentially "smash" two strings together.  For example if I had the strings "Hello " and "World", I can put them together using the `+` operation:
 
-```
+```python
 x = "Hello "
 y = "World"
 print(x + y) # Prints Hello World
@@ -22,7 +22,7 @@ print(x + y) # Prints Hello World
 
 Python has a cool feature, where you can multiply a string by a number to duplicate that string.  For example:
 
-```
+```python
 x = "good"
 print(x * 3) # prints goodgoodgood
 ```
@@ -31,7 +31,7 @@ print(x * 3) # prints goodgoodgood
 
 A useful Python function is the function `len`, which returns the length (or number of characters) of a string:
 
-```
+```python
 x = "string"
 print(len(x)) # prints 6 (the number of characters in "string")
 ```
@@ -40,7 +40,7 @@ print(len(x)) # prints 6 (the number of characters in "string")
 
 Finally, you can get subsets of a complete string.  This last topic is a bit complicated, and we'll return to it when we cover lists, but basically you can access "parts" of a string with slicing syntax `[]`.  Here's some examples of how it works:
 
-```
+```python
 x = "Hello"
 print(x[0]) # Prints H
 print(x[4]) # Prints o
@@ -52,7 +52,7 @@ String slicing also has a cool property, where you can get entire _parts_ of the
 
 Here's some examples of string slicing in action:
 
-```
+```python
 x = "Hello"
 y = "Goodbye"
 print(x[0:2]) # Prints He
@@ -66,7 +66,7 @@ Let's use our knowledge of string operations to write some cool functions!
 
 Example 1: 
 
-```
+```python
 # This function adds "Hello " to the start of any string
 def hello_add(x):
   return "Hello " + x
@@ -77,7 +77,7 @@ print(hello_add("Cathy"))  # Prints "Hello Cathy"
 
 Example 2:
 
-```
+```python
 # This function adds a dash to the middle of a word:
 def add_dash(s):
   return s[0:(len(s) // 2)] + "-" + s[(len(s) // 2):len(s)]
@@ -88,7 +88,7 @@ print(add_dash("Hello"))  # Prints "He-llo"
 
 Example 3:
 
-```
+```python
 # This function adds the first two characters of the first word
 #  to the last two characters of the second word
 def combine(s1, s2):
