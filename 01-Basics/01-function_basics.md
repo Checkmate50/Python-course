@@ -12,7 +12,7 @@ Remember the very first Python program we wrote?  It's just the text `print("Hel
 
 Specifically, we _call_ `print` with the _argument_ `"Hello World!"`, which tells the computer to print that thing!  You can provide lots of arguments to print: writing `print("Howdy")` prints the word `Howdy`, while writing `print(42)` prints the number 42 (try it yourself!).  We can even chain prints together.  For example, try copy-pasting the following code into your IDLE terminal and running it:
 
-```
+```python
 # Anything with a '#' in front is a comment: it doesn't do anything
 print("Hello")
 print("I am a program")
@@ -22,7 +22,7 @@ print(42)
 
 There are lots of functions in Python!  Unlike the `print` function, however, most functions output things _inside_ the Python program.  For example, the `abs` function (which stands for absolute value) takes in negative numbers and makes them positive.  The following program should print the numbers `1 2 3`:
 
-```
+```python
 print(1)
 # Call a function with the output of another function!
 print(abs(2))
@@ -36,7 +36,7 @@ Note that in this program, we printed the _output_ of the `abs` function: in oth
 
 Functions can also take in multiple arguments!  Note, though, that they _always_ produce a single output (which, as in the case of print, might be nothing).  Consider the `pow` function (which stands for `power`), which takes in two arguments `x` and `y`.  This function is the same as taking `x` to the power `y`.  For example, the following calls to print produce the numbers `1`, `8`, and `9`:
 
-```
+```python
 # Two arguments now!  But _only_ to pow, print still has one argument
 print(pow(1, 1))
 print(pow(2, 3))
@@ -51,7 +51,7 @@ We'll cover this in more detail later, but I want to introduce the idea of defin
 
 Let's start with something simple: making a function that takes in a single number and prints the absolute value of that number.  The code for this would look like the following:
 
-```
+```python
 # The function "header"
 def print_abs(input):
   # 'input' is the only argument to this function
@@ -61,7 +61,7 @@ def print_abs(input):
 
 Every function we define starts with the word `def` (meaning define), followed by a _function name_ (which can be anything), followed by the arguments to the function (in this case, `input` is our only argument).  Our function here doesn't produce any output to the program, but it does print any number we give it.  We can now call our function!
 
-```
+```python
 def print_abs(input):
   print(abs(input))
 
@@ -74,7 +74,7 @@ print_abs(-3) # Will print "3"
 
 Now let's try making a function that _returns_ a value.  Let's make the function `negative_abs`, which always returns a negative number:
 
-```
+```python
 # We can call our "arguments" whatever we want
 # Here we call it x
 def negative_abs(x)
@@ -84,7 +84,7 @@ def negative_abs(x)
 
 Here, the `return` keyword says that we want the following "thing" to be the output of the function.  In this case, the output of our function is the negative of `abs(x)`, where `x` is our input!  Consider the following:
 
-```
+```python
 def negative_abs(x)
   return -abs(x)
 
@@ -98,7 +98,7 @@ print(negative_abs(42)) # prints -42
 
 Just like when calling functions, we can have make our own with multiple arguments:
 
-```
+```python
 def print_pow(x, y):
   print(pow(x, y))
   

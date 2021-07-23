@@ -6,7 +6,7 @@ Decimals in Python are sometimes represented in [scientific notation](https://en
 
 Numbers of all kinds can be printed in Python.  The following code prints what you would expect:
 
-```
+```python
 print(4)
 print(-42)
 print(3.68)
@@ -17,7 +17,7 @@ print(-0.01)
 
 Python supports a wide variety of standard numeric operations, some of which we've already seen.  Some basic operations Python supports include `+` (addition), `-` (negation and subtraction), `*` (multiplication), and `/` (division).  Consider the following code:
 
-```
+```python
 print(2 + 3) # Prints 5
 print(4 - 1) # Prints 3
 print(3 * 6) # Prints 18
@@ -26,14 +26,14 @@ print(4 / 2) # Prints 2.0
 
 Python also supports a special syntax for exponents: `**`.  This is the same as calling the `pow` function that we saw earlier:
 
-```
+```python
 print(2 ** 3)     # Prints 8
 print(pow(2, 3))  # Prints 8
 ```
 
 Finally, Python supports a few "special" operations: `%` (modulus) and `//` (integer division) are the main two we will discuss.  `%` calculates the remainder of division between two numbers (this even works with decimals!), and `//` calculates division but rounds down to the nearest lower integer.  Here are some examples of these operations in action:
 
-```
+```python
 print(7 % 5)    # Prints 2
 print(5.5 % 3)  # Prints 2.5
 print(6 // 3)   # Prints 2
@@ -46,7 +46,7 @@ Remember how decimals are sometimes called floating points?  This has very good 
 
 For example, consider `.1 + .2`.  This operation should clearly be `.3`.  Python, however, gets it "wrong"!
 
-```
+```python
 print(.1 + .2) # Prints 0.30000000000000004
 ```
 
@@ -56,7 +56,7 @@ No, your computer isn't broken, this is actually what it calculates!  The reason
 
 Let's look at some examples of functions we can defined with these fancy new number operations!
 
-```
+```python
 def double(x):
   return 2 * x
   
@@ -100,7 +100,7 @@ See, each 1 and 0 in binary means the same thing as a tens place with regular nu
 
 Why does this matter for us though?  This is just how the computer thinks, is there any reason we should care?  The answer is _yes_!  Not only is this interesting, but it allows us to define the following powerful operations: `&` (bitwise AND), `|` (bitwise OR), and `^` (bitwise XOR).  These operations have the following properties:
 
-```
+```python
 print(0b1 & 0b0)    # Prints 0, since 1 and 0 is 0
 print(0b10 & 0b10)  # Prints 2, since 1 and 1 is 1
 print(0b10 | 0b01)  # Prints 3, since 1 or 0 is 1
