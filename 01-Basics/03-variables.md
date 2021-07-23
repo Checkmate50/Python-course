@@ -2,7 +2,7 @@
 
 So far, every function we've made has a single line: just return something that might depend as an input to that function.  However, it can often be useful to store and reuse intermediate steps along a computation.  Consider the following function that adds two numbers together, then multiplies the result by itself:
 
-```
+```python
 def add_mult(a, b):
   return (a + b) * (a + b)
 ```
@@ -13,7 +13,7 @@ In this function, we call `a` and `b` arguments to the function, but they are al
 
 We can define our own variable inside the function to make this computation easier (and faster!):
 
-```
+```python
 def add_mult(a, b):
   x = a + b    # Makes a new variable x, with value equal to a + b
   return x * x # Note that this is the same result as above!
@@ -21,7 +21,7 @@ def add_mult(a, b):
 
 You can set variables to whatever you want, and you can even assign them outside of functions!
 
-```
+```python
 x = 5
 y = 7.2
 print(x + y)  # Prints 12.2 
@@ -38,7 +38,7 @@ print(big_sum(x)) # Prints 30
 
 Whenever you assign to a variable, you overwrite whatever value it might have previously had.  This is called _variable reassignment_.  For example, consider the following code:
 
-```
+```python
 x = 5
 print(x) # Prints 5
 x = 7
@@ -51,7 +51,7 @@ Python programs always execute one line at a time, so be careful about the order
 
 The thing we'll be using variables most for at the beginning is saving _input_ from the user.  So far, all of our programs have just run, they haven't been able to interact with the user at all.  By using the `input` function, we ask the user to input a value, which can then be saved:
 
-```
+```python
 print("Please type a phrase:")
 x = input()
 print(x) # Prints out whatever the user just typed
@@ -61,7 +61,7 @@ print(x) # Prints out whatever the user just typed
 
 When given to us, our input is something called a "String", which we will talk about in a later lecture.  A lot of the time, though, we actually want to input a number.  Suppose we want to make a simple program that adds two numbers given to us together; we need to use the `int` function to convert the input to an Integer:
 
-```
+```python
 # A simple addition program
 print("Please give a number:")
 x = int(input())
