@@ -12,7 +12,7 @@ We will go over more conditions in the next topic, but for now we introduce numb
 
 We can see if two numbers are equal with `==`.  The reason we use `==` (two equal signs) for checking equality is that a single equal `=` denotes an _assignment_.  Be sure to remember the difference as this is a common thing to mixup for beginning programmers.  This also gives us a chance to see an `if` statement in action:
 
-```
+```python
 x = 5
 # Note that the condition should stylistically go inside parantheses (though it doesn't have to!)
 if (x == 5): # <-- remember the colon and indent!  Just like when defining functions
@@ -25,7 +25,7 @@ if (x == 4):
 
 We can also compare numbers with the math operators `<` (less than), `>` (greater than), `<=` (less than or equal to) and `>=` (greater than or equal to).  For example:
 
-```
+```python
 x = 6
 if (x < 7):
   print("x < 7")  # This will print
@@ -41,7 +41,7 @@ if (x >= 3):
 
 Let's see some examples of the cool new functions we can write with `if` statements!
 
-```
+```python
 # Prints 0 only if the input is 0
 def print_if_zero(x):
   # We can put if statements inside functions!  Just remember the indent
@@ -53,7 +53,7 @@ print_if_zero(0) # Prints 0
 print_if_zero(5) # Doesn't print anything
 ```
 
-```
+```python
 # Returns the sign of x (1, 0, or -1)
 def sign(x):
   if (x > 0):
