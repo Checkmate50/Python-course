@@ -23,6 +23,8 @@ Along with each lecture is an assignment, which should be completed as part of r
 
 Projects will be given at the end of each section to test understanding and reinforce the ideas of the section.  I highly recommend spending a good amount of time on these projects and going beyond the basic instructions to help understand what's going on.  If you have questions, as always, don't hesitate to reach out.
 
+Additionally, there are a few appendices in the Appendices folder.  These contain useful references to common terms and functions used in Python.  If you're not sure what something means, check these out, they might come in handy!
+
 ## Assignments
 
 If you're interested in doing the assignments and having them graded, email assignments to checkmatepython@gmail.com (not my real email, obviously).  Questions should all be either asked there or DM'd to me in discord (I'm Checkmate#0888).  Assignments can also be DM'd to me, though this is not preferred.
